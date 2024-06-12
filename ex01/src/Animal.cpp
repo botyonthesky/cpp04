@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   wrongAnimal.cpp                                    :+:      :+:    :+:   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 10:24:25 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/11 11:48:40 by tmaillar         ###   ########.fr       */
+/*   Created: 2024/06/10 13:57:25 by tmaillar          #+#    #+#             */
+/*   Updated: 2024/06/12 14:04:24 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/wrongAnimal.hpp"
+#include "../include/Animal.hpp"
 
-wrongAnimal::wrongAnimal()
+Animal::Animal()
 {
-    std::cout << "Wrong Animal basic constructor" << std::endl;
+    std::cout << "Animal basic constructor" << std::endl;
 }
 
-wrongAnimal::wrongAnimal(std::string type) : _type(type)
+Animal::Animal(std::string type) : _type(type)
 {
-    std::cout << "Wrong Animal constructor of type : "
-    << this->_type << std::endl;
+    std::cout << "Animal constructor of type : " << type << std::endl;
+    
 }
 
-wrongAnimal::wrongAnimal(wrongAnimal& other)
+Animal::Animal(Animal& other)
 {
     this->_type = other._type;
     std::cout << "Copy constructor of : " << other._type << std::endl;
 }
 
-wrongAnimal&    wrongAnimal::operator=(const wrongAnimal& other)
+Animal& Animal::operator=(const Animal& other)
 {
     if (&other != this)
         this->_type = other._type;
@@ -37,18 +37,22 @@ wrongAnimal&    wrongAnimal::operator=(const wrongAnimal& other)
     return (*this);
 }
 
-wrongAnimal::~wrongAnimal()
+Animal::~Animal()
 {
-    std::cout << "Wrong Animal destructor" << std::endl;
+    std::cout << "Animal destructor" << std::endl;
 }
 
-std::string     wrongAnimal::getType(void) const
+void            Animal::makeSound(void) const
+{
+    std::cout << "Undefined Animal make sound..." << std::endl;
+}
+
+void            Animal::set_type(std::string s_type)
+{
+    _type = s_type;
+}
+
+std::string     Animal::getType(void) const
 {
     return (_type);
 }
-
-void    wrongAnimal::makeSound(void) const
-{
-    std::cout << "Undefined Wrong Animal make sound..." << std::endl;
-}
-

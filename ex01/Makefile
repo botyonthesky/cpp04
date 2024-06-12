@@ -6,11 +6,11 @@
 #    By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/10 13:56:16 by tmaillar          #+#    #+#              #
-#    Updated: 2024/06/12 14:00:23 by tmaillar         ###   ########.fr        #
+#    Updated: 2024/06/12 14:03:38 by tmaillar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 			:= polymorphisme
+NAME 			:= dontBurnThemAll
 
 CXX				:= c++
 CXXFLAGS 		:= -std=c++98 -g -Wall -Wextra -Werror

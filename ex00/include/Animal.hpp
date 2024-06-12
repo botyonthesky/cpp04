@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 13:57:18 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/11 11:48:52 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/12 13:55:28 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,17 @@
 #include <string>
 #include <iostream>
 
-class animal
+class Animal
 {
     protected:
         std::string _type;
         
     public:
-        animal();
-        animal(std::string type);
-        animal(animal& other);
-        animal& operator=(const animal& other);
-        ~animal();
+        Animal();
+        Animal(std::string type);
+        Animal(Animal& other);
+        Animal& operator=(const Animal& other);
+        ~Animal();
 
         void            set_type(std::string s_type);
         std::string     getType(void) const;

@@ -6,39 +6,39 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 13:57:30 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/11 12:57:03 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/12 14:04:55 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/animal.hpp"
-#include "../include/dog.hpp"
+#include "../include/Animal.hpp"
+#include "../include/Dog.hpp"
 
-dog::dog() : animal("Dog")
+Dog::Dog() : Animal("Dog")
 {
-    std::cout << "Basic dog constructor" << std::endl;
+    std::cout << "Basic Dog constructor" << std::endl;
 }
 
-dog::dog(std::string type) : animal(type)
+Dog::Dog(std::string type) : Animal(type)
 {
     std::cout << "Constructor type : " << _type << std::endl;
 }
 
-dog::~dog()
+Dog::~Dog()
 {
     std::cout << "Dog destructor" << std::endl;
 }
 
-dog::dog(dog& other) : animal::animal(other)
+Dog::Dog(Dog& other) : Animal::Animal(other)
 {
 }
 
-dog&    dog::operator=(const dog& other)
+Dog&    Dog::operator=(const Dog& other)
 {
-    animal::operator=(other);
+    Animal::operator=(other);
     return (*this);
 }
 
-void    dog::makeSound(void) const
+void    Dog::makeSound(void) const
 {
     std::cout << "Wouuuaaf wouuuaaf" << std::endl;
 }

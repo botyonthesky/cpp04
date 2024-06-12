@@ -6,40 +6,40 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 13:57:28 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/11 12:57:14 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/12 14:04:38 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/animal.hpp"
-#include "../include/cat.hpp"
+#include "../include/Animal.hpp"
+#include "../include/Cat.hpp"
 
-cat::cat() : animal("Cat")
+Cat::Cat() : Animal("Cat")
 {
-    std::cout << "Basic cat constructor" << std::endl;
+    std::cout << "Basic Cat constructor" << std::endl;
 }
 
-cat::cat(std::string type) : animal(type)
+Cat::Cat(std::string type) : Animal(type)
 {
     std::cout << "Constructor type : " << type << std::endl;
 }
 
-cat::~cat()
+Cat::~Cat()
 {
     std::cout << "Cat destructor" << std::endl;
 }
 
-cat::cat(cat& other) : animal::animal(other)
+Cat::Cat(Cat& other) : Animal::Animal(other)
 {
     
 }
 
-cat& cat::operator=(const cat& other)
+Cat& Cat::operator=(const Cat& other)
 {
-    animal::operator=(other);
+    Animal::operator=(other);
     return (*this);
 }
 
-void    cat::makeSound(void) const
+void    Cat::makeSound(void) const
 {
     std::cout << "Miiiiiiiaaaaaaouuuuuu" << std::endl;
 }
