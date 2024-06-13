@@ -6,11 +6,11 @@
 #    By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/10 13:56:16 by tmaillar          #+#    #+#              #
-#    Updated: 2024/06/13 14:32:04 by tmaillar         ###   ########.fr        #
+#    Updated: 2024/06/13 14:32:56 by tmaillar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 			:= dontBurnThemAll
+NAME 			:= abstractClass
 
 CXX				:= c++
 CXXFLAGS 		:= -std=c++98 -g -Wall -Wextra -Werror

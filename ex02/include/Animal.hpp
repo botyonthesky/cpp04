@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 13:57:18 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/13 14:30:54 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/13 14:33:27 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class Animal
 
         void            set_type(std::string s_type);
         std::string     getType(void) const;
-        virtual void            makeSound(void) const;
+        virtual void            makeSound(void) const = 0;
 };
 
 #endif
