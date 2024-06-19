@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   wrongCat.cpp                                       :+:      :+:    :+:   */
+/*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 10:24:27 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/12 13:59:57 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/18 06:57:17 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,3 @@ WrongCat::~WrongCat()
     std::cout << "Wrong Cat destructor" << std::endl;
 }
 
-// void    WrongCat::makeSound(void) const
-// {
-//     WrongAnimal::makeSound();
-// }

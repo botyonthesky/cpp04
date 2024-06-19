@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongCat.hpp                                       :+:      :+:    :+:   */
+/*   main.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 10:24:21 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/18 06:57:32 by tmaillar         ###   ########.fr       */
+/*   Created: 2024/06/19 07:42:15 by tmaillar          #+#    #+#             */
+/*   Updated: 2024/06/19 07:44:03 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WRONGCAT_HPP
-#define WRONGCAT_HPP
+#ifndef MAIN_HPP
+#define MAIN_HPP
 
-#include <string>
-#include <iostream>
-#include "WrongAnimal.hpp"
+#include "../include/Animal.hpp"
+#include "../include/WrongAnimal.hpp"
+#include "../include/Cat.hpp"
+#include "../include/WrongCat.hpp"
+#include "../include/Dog.hpp"
 
-class WrongCat : public WrongAnimal
-{
-    public:
-        WrongCat();
-        WrongCat(std::string type);
-        WrongCat(WrongCat& other);
-        WrongCat& operator=(WrongCat& other);
-        ~WrongCat();
-        
-};
+int     main(void);
+void    subjectTest(void);
+void    wrongSubjectTest(void);
+void    testDog(void);
+void    testCat(void);
+void    testAnimal(void);
 
 #endif

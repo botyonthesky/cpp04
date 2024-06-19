@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/10 13:57:21 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/12 13:57:50 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/19 07:34:01 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ class Cat : public Animal
         ~Cat();
 
         void        makeSound(void) const;
-        
-    private:
     
 };
 

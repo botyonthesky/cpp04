@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/11 10:24:27 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/13 12:04:30 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/18 06:50:46 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,3 @@ WrongCat::~WrongCat()
     std::cout << "Wrong Cat destructor" << std::endl;
 }
 
-// void    WrongCat::makeSound(void) const
-// {
-//     WrongAnimal::makeSound();
-// }
